@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Color Change</title>
+</head>
+<body>
+  <button id="colorBtn" onclick="changeColors()">Click Me</button>
+
+  <script>
+    function changeColors() {
+      document.body.style.backgroundColor = "yellow";
+      let btn = document.getElementById("colorBtn");
+      btn.style.backgroundColor = "blue";
+      btn.style.color = "white";
+    }
+  </script>
+</body>
+</html>

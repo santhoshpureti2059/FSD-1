@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Toggle Paragraph</title>
+</head>
+<body>
+
+<p id="myPara" style="display: none;">This is Paragraph</p>
+<button onclick="togglePara()">Show/Hide</button>
+
+<script>
+function togglePara() {
+  let para = document.getElementById("myPara");
+  if (para.style.display === "none") {
+    para.style.display = "block";
+  } else {
+    para.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

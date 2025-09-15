@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arrow Counter</title>
+</head>
+<body>
+  <h2>COUNTER</h2>
+  <input type="text" id="arrowCounter" value="5" readonly><br><br>
+  <input type="image" src="up1.png" alt="Up" width="50" onclick="arrowIncrement()">
+  <input type="image" src="down1.png" alt="Down" width="50" onclick="arrowDecrement()">
+
+  <script>
+    let counter=5;
+    function arrowIncrement() {
+      counter++;
+      document.getElementById("arrowCounter").value = counter;
+    }
+    function arrowDecrement() {
+      counter--;
+      document.getElementById("arrowCounter").value = counter;
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+*{
+    padding: 0px;
+    margin: 0px;
+  }
+    body{
+      background-color: aqua;
+    }
+  .navbar {
+    display: flex;
+    justify-content: space-between
+    ;
+    background-color: black;
+    padding: 10px 20px;
+  }
+  
+  
+
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+  }
+
+  .navbar a:hover {
+    background-color: black;
+  
+  }
+  form{
+    text-align: center;
+    padding-top: 100px;
+     font-weight: bold;
+     font-size: 30px;
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+

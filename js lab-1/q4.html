@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Even Odd Checker</title>
+</head>
+<body>
+  <input type="text" id="num"><br><br>
+  <button onclick="checkNumber()">Click Me</button>
+  <p id="message" style="color:red;"></p>
+
+  <script>
+    function checkNumber() {
+      let value = document.getElementById("num").value;
+      let message = document.getElementById("message");
+
+      if (value === "") {
+        message.textContent = "Please enter a number!";
+        return;
+      }
+
+      let num = parseInt(value);
+
+      if (num % 2 === 0) {
+        document.body.style.backgroundColor = "lightgreen";
+        document.getElementById("num").style.backgroundColor = "yellow";
+        document.querySelector("button").style.backgroundColor = "orange";
+        message.textContent = "Even number";
+        message.style.color = "black";
+      } else {
+        message.textContent = "Odd number";
+        message.style.color = "blue";
+      }
+    }
+  </script>
+</body>
+</html>

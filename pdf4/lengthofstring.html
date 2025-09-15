@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>printlenthofstring</title>
+</head>
+<body>
+    <script>
+         //print length of a string
+
+        function getStringLength(str) {
+  let count = 0;
+  while (str[count] !== undefined) {
+    count++;
+  }
+  return count;
+}
+console.log(getStringLength("hello")); 
+//string is palindrom
+
+function ispalindrome(str){
+    let reversed = reveseString(str);
+    return str === reversed;
+}
+console.log(ispalindrome("madam"));
+    </script>
+</body>
+</html>

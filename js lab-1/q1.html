@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Counter</title>
+</head>
+<body>
+  <h2>COUNTER</h2>
+  <input type="text" id="counter" value="1" readonly><br><br>
+  <button onclick="decrement()">Decrement</button>
+  <button onclick="reset()">Reset</button>
+  <button onclick="increment()">Increment</button>
+
+  <script>
+    
+    let count =1;
+    function increment() {
+      count++;
+      document.getElementById("counter").value = count;
+    }
+    function decrement() {
+      count--;
+      document.getElementById("counter").value = count;
+    }
+    function reset() {
+      count=0;
+      document.getElementById("counter").value = count;
+    }
+    
+  </script>
+</body>
+</html>
