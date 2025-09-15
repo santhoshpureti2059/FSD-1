@@ -1,0 +1,64 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter principle amount:<input type="text" id="enter principle amount:" />
+    <br>
+    enter time:<input type="text" id="enter time:"/>
+    <br>
+    enter rate of intrest:<input type="text" id="enter rate of intrest:"/>
+    <br>
+    <button onclick="simple()"> calc</button>
+    <br>
+    <div id="div_result"></div>
+    
+    
+</body>
+<script>
+  /*  function simple()
+    {
+      let s,p,t,r;
+      p=Number(document.getElementById("enter principle amount:").value);
+      t=Number(document.getElementById("enter time:").value);
+      r=Number(document.getElementById("enter rate of intrest:").value);
+      s= p*t*r/100;
+      document.getElementById("div_result").innerHTML= "simple interst="+s;
+    }*/
+</script>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    length:<input type="text" id="length:" />
+    <br />
+    breadth:<input type="text" id="breadth:" />
+    <br />
+    <button onclick="square()">Area</button>
+    <br />
+    <div id="div_result"></div>
+    <br />
+    <div id="man"></div>
+  </body>
+  <script>
+    function square() {
+      alert();
+      let l, b, a, p;
+      l = Number(document.getElementById("length:").value);
+      b = Number(document.getElementById("breadth:").value);
+      a = l * b;
+      p = 2 * (l + b);
+      document.getElementById("div_result").innerHTML = "area:" + a;
+      document.getElementById("man").innerHTML = "perimeter: " + p;
+    }
+  </script>
+</html>

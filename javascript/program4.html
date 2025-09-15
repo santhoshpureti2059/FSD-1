@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    length:<input type="text" id="length:" />
+    <br />
+    breadth:<input type="text" id="breadth:" />
+    <br />
+    <button onclick="square()">Area</button>
+    <div id="div_result"></div>
+    <br />
+    <button onclick="square1()">perimeter</button>
+    <div id="man"></div>
+
+  </body>
+  <script>
+    function square() {
+      
+      let l, b, a;
+      l = Number(document.getElementById("length:").value);
+      b = Number(document.getElementById("breadth:").value);
+      a = l * b;
+    
+      document.getElementById("div_result").innerHTML = "area:" + a;
+     
+    }
+
+    function square1(){
+        let l, b,  p;
+      l = Number(document.getElementById("length:").value);
+      b = Number(document.getElementById("breadth:").value);
+     
+      p = 2 * (l + b);
+
+      document.getElementById("man").innerHTML = "perimeter: " + p;
+
+    }
+  </script>
+</html>

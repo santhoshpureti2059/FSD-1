@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  onload="loadingpage()">
+
+
+    <button onclick="leftclick()">left click </button>
+    <button ondblclick="doubleclick()">double click </button>
+    <button oncontextmenu="rightclick()">right click!</button>
+    <br>
+    <input type="text" onfocus="enter()" onblur="exit()"/>
+    <script>
+        // let colors = ['red','green','blue'];
+        // document.write(colors+"<br>");
+        // colors.push('white');
+        // document.write(colors+"<br>");
+        // colors.unshift('black');
+        // document.write(colors+"<br>");
+        // colors.splice(3,null,'orange');
+        // document.write(colors+"<br>");
+        // colors.pop();
+        // document.write(colors+"<br>");
+        // colors.shift();
+        // document.write(colors+"<br>");
+        // colors.splice(2,1);
+        // document.write(colors+"<br>");
+        function exit()
+        {
+            console.log('i am comming out of text box');
+        }
+        function enter()
+        {
+            console.log("i am inside text box ");
+        }
+        function loadingpage()
+        {
+            alert("hello world ....");
+        }
+
+         function leftclick()
+         {
+            alert("mouse left click");
+         }
+         function doubleclick()
+         {
+            alert("mouse double click");
+         }
+         function rightclick()
+         {
+            alert("mouse rirht click!....");
+         }
+
+
+
+
+
+    </script>
+</body>
+</html>

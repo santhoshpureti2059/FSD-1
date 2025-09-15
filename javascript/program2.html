@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    enter number1:<input type="text" id="number1"/>
+    <br>
+    enter number2:<input type="text" id="number2"/>
+    <br>
+    <button onclick="addition()"> add</button>
+     
+    <br>
+    <div id="div_result"> </div>
+    <script>
+        function addition()
+        {
+        let a,b,c;
+       a=Number(document.getElementById("number1").value);
+       b=Number(document.getElementById("number2").value);
+       c=a+b;
+        document.getElementById("div_result").innerHTML = "sum is: "+c;
+        }
+
+    </script>
+</body>
+</html>

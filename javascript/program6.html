@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter age:<input type="text"/>
+    <br>
+    <button  onclick="checkage()"> validAge</button>
+    <script>
+        function checkage()
+        {
+            let age = document.getElementById("textage").value;
+            if(age == "")
+        {
+            document.getElementById("errspana").innerHtml = "Required";
+            document.getElementById("divResult").innerHTML = "";
+
+        }
+        else{
+            document.getElementById("errspoan").innerHTML =-"";
+            if( Number(age) >= 18 && Number(age) <=40 )
+                document.getElementById("divresult").innerHTML="ok";
+            else
+               document.getElementById("divresult").innerHTML="Not ok";
+        }
+    }
+    </script>
+</body>
+</html>
